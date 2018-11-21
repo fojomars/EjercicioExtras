@@ -15,7 +15,7 @@ public class Ordenador {
     Teclado obxTeclado;
     Monitor obxMonitor;
     
-    //Constructor con parametros
+    // Constructor
     public Ordenador(){
         procesador = new CPU();
         raton = new Rato();
@@ -27,17 +27,18 @@ public class Ordenador {
 
     public void setCPU(int nucleos, int ram) {
         procesador.setNucleos(nucleos);
-        procesador.setRam(ram);
-        
+        procesador.setRam(ram); 
     }
-
+    
     public void setRaton(boolean inalambrico, String modelo){
         raton.setInalambrico(inalambrico);
         raton.setModelo(modelo);
     }
+    
     public void setTeclado(int numTeclas){
         obxTeclado.setNumTeclas(numTeclas);
     }
+    
     public void setMonitor(String marca, float pulgadas){
         obxMonitor.setMarca(marca);
         obxMonitor.setPulgadas(pulgadas);
